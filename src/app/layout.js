@@ -1,6 +1,6 @@
-import Header from "@/_components/Header";
+import Header from "@/app/_components/Header";
 import "./globals.css";
-import ProviderTheme from "@/_components/ProviderTheme";
+import ProviderTheme from "@/app/_components/ProviderTheme";
 
 export const metadata = {
   title: "IMDb clone",
