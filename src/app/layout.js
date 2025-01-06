@@ -1,5 +1,6 @@
 import Header from "@/_components/Header";
 import "./globals.css";
+import ProviderTheme from "@/_components/ProviderTheme";
 
 export const metadata = {
   title: "IMDb clone",
@@ -9,9 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>
-        <Header />
-        {children}
+      <body className={`antialiased`}>
+        <ProviderTheme>
+          <Header />
+          {children}
+        </ProviderTheme>
       </body>
     </html>
   );
